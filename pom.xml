@@ -11,7 +11,7 @@
 
   <name>ReturnMe</name>
 
-  <description>A simple addon for AuthMe that returns players to their previous server after successful auth.</description><properties>
+  <description>A simple addon for AuthMeBungee that returns players to their previous server after successful authentication.</description><properties>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -22,7 +22,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
+        <version>3.11.0</version>
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
@@ -31,7 +31,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.2.4</version>
+        <version>3.5.0</version>
         <executions>
           <execution>
             <phase>package</phase>

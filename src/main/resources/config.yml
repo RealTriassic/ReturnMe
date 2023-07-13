@@ -1,0 +1,19 @@
+##############################################
+#  ░▒█▀▀▄░█▀▀░▀█▀░█░▒█░█▀▀▄░█▀▀▄░▒█▀▄▀█░█▀▀  #
+#  ░▒█▄▄▀░█▀▀░░█░░█░▒█░█▄▄▀░█░▒█░▒█▒█▒█░█▀▀  #
+#  ░▒█░▒█░▀▀▀░░▀░░░▀▀▀░▀░▀▀░▀░░▀░▒█░░▒█░▀▀▀  #
+##############################################
+
+# This file handles the configuration for the ReturnMe Minecraft plugin.
+# Plugin created by Triassic.
+
+
+# The server where players log in.
+login-server: "login"
+
+# Players who log in and do not have a previous server set or
+# the server that was set is offline, will be connected to this server.
+default-server: "spawn"
+
+
+version: 1.0.0 # DO NOT MODIFY.
