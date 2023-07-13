@@ -1,6 +1,8 @@
 # ReturnMe
 An addon for AuthMe, for Bungeecord, that saves the last server the player was on and then reconnects them to it once the player logs back onto the server and logs in.
 
+Available on [SpigotMC](https://www.spigotmc.org/resources/returnme.111205/) and [Modrinth](https://modrinth.com/plugin/returnme)!
+
 ## How to use?
 1. Download the [latest release](https://github.com/RealTriassic/ReturnMe/releases/latest) of the plugin.
 2. Put the `.jar` file into your `plugins` directory **of your Bungeecord server**
