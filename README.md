@@ -10,6 +10,9 @@ Available on [SpigotMC](https://www.spigotmc.org/resources/returnme.111205/) and
 4. Head to `plugins/ReturnMe/config.yml` and configure the plugin to your liking!
 5. Once you're done configuring, restart your server again!
 
+## Permissions
+`returnme.use` - If enabled, this permission is used to allow players or groups to be returned to their last location.
+
 ## Compiling yourself
 1. Open a Terminal
 2. Use `git clone https://github.com/RealTriassic/ReturnMe.git` to clone this repository.
