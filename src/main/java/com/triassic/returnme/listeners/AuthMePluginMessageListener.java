@@ -13,15 +13,20 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.event.EventHandler;
 
+import java.util.List;
 import java.util.Objects;
 
 public class AuthMePluginMessageListener implements Listener {
     private final Configuration config;
     private final UserStorageManager storage;
+    private final Boolean isPermissionRequired;
+    private final List<String> exemptPlayers;
 
     public AuthMePluginMessageListener(Configuration config, UserStorageManager storage) {
         this.config = config;
         this.storage = storage;
+        isPermissionRequired = config.getBoolean("require-permission");
+        exemptPlayers = config.getStringList("exempted-players");
     }
 
     @EventHandler
@@ -52,6 +57,14 @@ public class AuthMePluginMessageListener implements Listener {
         ProxiedPlayer player = ProxyServer.getInstance().getPlayer(dataIn.readUTF());
 
         if (type.equals("login")) {
+            if (isPermissionRequired && !player.hasPermission("returnme.use")) {
+                return;
+            }
+
+            if (exemptPlayers.contains(player.getName())) {
+                return;
+            }
+
             handleLoginEvent(player);
         }
     }

@@ -8,7 +8,18 @@
 # Plugin created by Triassic.
 
 
+# Should players need a permission to be sent to their last location?
+# If enabled, players will require the "returnme.use" permission to be sent to their last location.
+require-permission: false
+
+# A list of players to exempt from being sent to their last location.
+# Bypasses the "returnme.use" permission.
+exempted-players:
+  - Player1
+  - Player2
+
 # The server where players log in.
+# This would typically be the "unloggedUserServer" from AuthMeBungee.
 login-server: "login"
 
 # Players who log in and do not have a previous server set or
@@ -16,4 +27,4 @@ login-server: "login"
 default-server: "spawn"
 
 
-version: 1.0.0 # DO NOT MODIFY.
+version: ${project.version} # DO NOT MODIFY.

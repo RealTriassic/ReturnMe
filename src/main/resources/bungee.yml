@@ -4,3 +4,8 @@ main: com.triassic.returnme.ReturnMe
 author: Triassic
 description: A simple addon for AuthMe that returns players to their previous server after successful auth.
 depends: [AuthMeBungee]
+
+permissions:
+  returnme.use:
+    default: op
+    description: 'If enabled, allows the player to be returned to their last location'
