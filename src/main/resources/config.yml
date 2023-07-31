@@ -26,5 +26,9 @@ login-server: "login"
 # the server that was set is offline, will be connected to this server.
 default-server: "spawn"
 
+# Toggle whether your server stats are sent to https://bstats.org.
+# All data collected is fully anonymous and by setting this option to false you can opt-out.
+toggle-metrics: true
+
 
 version: ${project.version} # DO NOT MODIFY.

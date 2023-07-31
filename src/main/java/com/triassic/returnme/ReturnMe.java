@@ -33,6 +33,13 @@ public final class ReturnMe extends Plugin {
             throw new RuntimeException(e);
         }
 
+        // Initialize bStats metrics
+        final boolean metricsEnabled = config.getBoolean("toggle-metrics", true);
+
+        if (metricsEnabled) {
+            new Metrics(this, 19332);
+        }
+
         // Initialize the UserStorageManager
         UserStorageManager storage = new UserStorageManager(logger, config);
 
