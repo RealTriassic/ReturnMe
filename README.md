@@ -3,6 +3,9 @@ An addon for AuthMe, for Bungeecord, that saves the last server the player was o
 
 Available on [SpigotMC](https://www.spigotmc.org/resources/returnme.111205/) and [Modrinth](https://modrinth.com/plugin/returnme)!
 
+> [!WARNING]
+This plugin is no longer receiving updates and is no longer maintained. **Please consider migrating from Bungeecord to [Velocity](https://papermc.io/software/velocity)** together with [AuthMeVelocity](https://modrinth.com/plugin/authmevelocity) and the [LastServer addon](https://modrinth.com/plugin/authmevelocity-lastserveraddon) to replicate the features of this plugin, with better stability and even more features than what this plugin offers.
+
 ## How to use?
 1. Download the [latest release](https://github.com/RealTriassic/ReturnMe/releases/latest) of the plugin.
 2. Put the `.jar` file into your `plugins` directory **of your Bungeecord server**
